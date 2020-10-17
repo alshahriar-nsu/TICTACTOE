@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #348F50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #56B4D3, #348F50); 
+    overflow-x: hidden;
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    
+}
+button{
+    padding: 10px;
+    margin-top: 10px;
+     position:absolute;
+    left: 50px;
+    top: 20p
+    transform: translateX(-50%);
+    transform: translateY(-50%);
+    background-color: black;
+    color: pink;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: medium;
+        
+    }
+#player{
+    text-align: center;
+    margin-top: 20px;
+    font-size: large;
+}
+.container{
+    height: 100vw;
+    width: 100vw;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,auto);
+}
+
+.div{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center
+}
+.div:nth-child(1),
+.div:nth-child(2),
+.div:nth-child(3){
+    border-top: none;
+}
+.div:nth-child(1),
+.div:nth-child(4),
+.div:nth-child(7){
+    border-left: none;
+}
+.div:nth-child(3),
+.div:nth-child(6),
+.div:nth-child(9){
+    border-right: none;
+}
+.div:nth-child(7),
+.div:nth-child(8),
+.div:nth-child(9){
+    border-bottom: none;
+}
